@@ -31,12 +31,9 @@
         </header>
         
         <div class="container" id="conteudo" />
-            <h1 class="title">
+            <h1 class="mensagem">
                 Olá ${pessoa.nome} ${pessoa.sobrenome}, <br> Obrigado por efetuar cadastro!
             </h1>
-
-            <br><br><br>
-
             <a href="index" class="btn">voltar</a>
 
         </div>

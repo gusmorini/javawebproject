@@ -14,6 +14,7 @@ and open the template in the editor.
 .title{
     font-family: 'Merienda', cursive;
     font-size: 40px;
+    color:#8d6c9f;
 }
 
 *{
@@ -23,16 +24,17 @@ and open the template in the editor.
 table{
     width:100%;
     margin:20px 0px;
-    border-collapse: collapse;
+    /*border-collapse: collapse;*/
 }
 
 td, th{
-    padding: 10px 10px;
-    border:2px solid #333; 
+    padding: 15px 10px;
+    /*border:2px solid #333; */
 }
 
 th{
-    background: #999;
+    background: #8d6c9f;
+    color: white;
 }
 
 td{
@@ -50,10 +52,6 @@ a{
     color:#111;
 }
 
-a:hover{
-    color: #F00022;
-}
-
 body{
     background-size: auto;
     background-color:white;
@@ -67,8 +65,8 @@ body{
 
 header{
     /*background: rgba(0,0,0,0.2);*/
-    background: #62AFBA;
-    border-bottom: 30px solid #222;
+    background: #faefde;
+    border-bottom: 30px solid #8d6c9f;
     color: white;
     height: 90px;
     margin-bottom: 100px;
@@ -81,22 +79,17 @@ header h2{
     margin: 0px;
     text-align: right;
     padding-top: 30px;
-    color:#333;
+    color:#8d6c9f;
 }
 
 .logo{
-    background: white;
     position: absolute;
-    padding: 10px;
-    border-radius: 15px;
-    line-height: 0px;
     margin-right: 20px;
     margin-top:35px;
-    border: 5px solid #333;
 }
 
 .logo img{
-    height: 100px;
+    height: 150px;
 }
 
 .painel{
@@ -106,7 +99,7 @@ header h2{
 }
 
 .painel li{
-    width: 300px;
+    width: 200px;
     display: inline-flex;
     font-size: 20px;
     padding: 30px;
@@ -117,8 +110,8 @@ header h2{
 }
 
 .painel img{
-    height: 250px;
-    width: 250px;
+    height: 180px;
+    width: 180px;
     margin-bottom: 10px;
 }
 
@@ -126,13 +119,58 @@ header h2{
     
 }
 
+.login{
+  width: 300px;
+  margin: 0 auto;
+}
+
+.mensagem{
+  background: rgba(0,0,0,0.1);
+  padding: 50px;
+  color: #8d6c9f;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
 .container{
-    width: 90%;
+    width: 70%;
     margin: 0 auto;
 }
 
 .center{
     text-align: center;
+}
+
+.left{
+  text-align: left;
+}
+
+.right{
+  text-align: right;
+}
+
+.equipe{
+  text-align: center;
+  margin: 0 auto;
+  width: 400px;
+  background: rgba(255,255,255,0.5);
+  padding: 50px;
+}
+
+.equipe li::before {
+  content: "»";
+  color:#8d6c9f;
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.equipe ul{
+  text-align: left;
+  list-style: none;
+}
+
+.equipe li{
+  font-size: 20px;
 }
 
 label{
@@ -148,6 +186,14 @@ form{
 form h2{
     font-family: 'Merienda', cursive;
     font-size: 25px;
+    color:#8d6c9f;
+}
+
+form h5{
+  color:#555;
+  font-size: 16px;
+  float: right;
+  font-weight: 100;
 }
 
 input,select,textarea{
@@ -157,8 +203,92 @@ input,select,textarea{
     margin-bottom:20px;
     background:white;
     /*border:3px solid #333;*/
+    border: 0;
     font-size: 18px;
 }
+
+.select-style {
+    position: relative;
+    width: 100%;
+    margin-right: 5px;
+}
+
+.select-style select {
+    display: none;
+}
+
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #8d6c9f transparent transparent transparent;
+}
+
+.select-selected {
+    background-color: #fff;
+}
+
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #8d6c9f transparent;
+  top: 50%;
+}
+
+.select-items div,.select-selected {
+  color: grey;
+  padding: 22px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+.select-items {
+  position: absolute;
+  background-color: #fff;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  height: auto;
+  max-height: 250px;
+  overflow-y: scroll;
+  border: 1px solid #ccc;
+
+}
+
+.select-hide {
+  display: none;
+}
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+/*select {
+   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image:
+      linear-gradient(45deg, transparent 50%, #62afba 50%),
+      linear-gradient(135deg, #62afba 50%, transparent 50%),
+      linear-gradient(to right, #ccc, #ccc);
+  background-position:
+      calc(100% - 20px) calc(1em + 10px),
+      calc(100% - 15px) calc(1em + 10px),
+      calc(0% - 2.5em) 10em;
+  background-size:
+      5px 5px,
+      5px 5px,
+      1px 1.5em;
+  background-repeat: no-repeat;
+}*/
 
 .btn{
     padding: 20px;
@@ -166,23 +296,29 @@ input,select,textarea{
     cursor:pointer;
     font-style: none;
     text-decoration: none;
-    background:#333;
+    background:#8d6c9f;
     color:white;
     font-size: 20px;
     font-family: 'Merienda', cursive;
+    transition: all 1s;
+}
+
+.btn:hover{
+  background: #7b598e;
 }
 
 #conteudo{
     margin-bottom: 50px;
     margin-top: 50px;
-    min-height: 1200px;
+    min-height: 800px;
 }
 
 #footer{
-    background: #222;
-    color: white;
-    line-height: 200px;
-    border-top: 35px solid #5AAFBA;
+    background: #111;
+    color: #8d6c9f;
+    font-size: 18px;
+    line-height: 100px;
+    border-top: 35px solid #8d6c9f;
 }
 
 .divide{

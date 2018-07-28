@@ -11,7 +11,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link href="<c:url value="resources/css/style2.css" />" rel="stylesheet" type="text/css" />
         <link rel="icon" type="imagem/png" href="<c:url value="resources/img/java.png"/>" />
-        <title>Home</title>
+        <title>Login</title>
     </head>
     <body>
         
@@ -31,35 +31,15 @@
         </header>
         
         <div class="container" id="conteudo" />
+        
+        <form action="validar" method="post" class="login" autocomplete="off">
+            <h2>Login</h2>
+            <input type='text' name='login' placeholder="login">
+            <input type='password' name='senha' placeholder='senha'>
+            <button class="btn" type="submit">Enviar</button>
+            <h5 class="right">LOGIN: admin <br> SENHA: admin</h5>
+        </form>
 
-            <h1 class="title center">Bem Vindo!</h1>
-
-            <ul class="painel">
-                <li>
-                    <a href="cadastrarAlguem" role="button">
-                        <img src="<c:url value="resources/img/add-user.png"/>">
-                        Cadastrar Pessoa
-                    </a>                
-                </li>
-                <li>
-                    <a href="relatorio" role="button">
-                        <img src="<c:url value="resources/img/tasks.png"/>">
-                        Mostrar Relatório
-                    </a>                
-                </li>
-                <li>
-                    <a href="login" role="button">
-                        <img src="<c:url value="resources/img/id-card.png"/>">
-                        Efetuar Login
-                    </a>                
-                </li>                
-                <li>
-                    <a href="equipe" role="button">
-                        <img src="<c:url value="resources/img/team.png"/>">
-                        Equipe
-                    </a>                
-                </li>
-            </ul>
         </div>
         
         <footer id="footer">

@@ -37,14 +37,26 @@
             <ul class="painel">
                 <li>
                     <a href="cadastrarAlguem" role="button">
-                        <img src="<c:url value="resources/img/add.png"/>">
+                        <img src="<c:url value="resources/img/add-user.png"/>">
                         Cadastrar Pessoa
                     </a>                
                 </li>
                 <li>
                     <a href="relatorio" role="button">
-                        <img src="<c:url value="resources/img/rel.png"/>">
+                        <img src="<c:url value="resources/img/tasks.png"/>">
                         Mostrar Relatório
+                    </a>                
+                </li>
+                <li>
+                    <a href="login" role="button">
+                        <img src="<c:url value="resources/img/id-card.png"/>">
+                        Efetuar Login
+                    </a>                
+                </li>                
+                <li>
+                    <a href="equipe" role="button">
+                        <img src="<c:url value="resources/img/team.png"/>">
+                        Equipe
                     </a>                
                 </li>
             </ul>
