@@ -1,0 +1,200 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 15/07/2018, 20:58:16
+    Author     : Leonardo
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Coda+Caption:800|Roboto|Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Merienda');
+
+.title{
+    font-family: 'Merienda', cursive;
+    font-size: 40px;
+}
+
+*{
+    font-family: 'Roboto Condensed';
+}
+
+table{
+    width:100%;
+    margin:20px 0px;
+    border-collapse: collapse;
+}
+
+td, th{
+    padding: 10px 10px;
+    border:2px solid #333; 
+}
+
+th{
+    background: #999;
+}
+
+td{
+    background:white;
+}
+
+html{
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    color:#111;
+}
+
+a:hover{
+    color: #F00022;
+}
+
+body{
+    background-size: auto;
+    background-color:white;
+    background:url("../../resources/img/fundo5.jpg") no-repeat fixed;
+    background-size:cover;
+    padding: 0px;
+    margin: 0px;
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+
+header{
+    /*background: rgba(0,0,0,0.2);*/
+    background: #62AFBA;
+    border-bottom: 30px solid #222;
+    color: white;
+    height: 90px;
+    margin-bottom: 100px;
+}
+
+header h2{
+    font-family: 'Merienda', cursive;
+    font-size: 30px;
+    padding: 0px;
+    margin: 0px;
+    text-align: right;
+    padding-top: 30px;
+    color:#333;
+}
+
+.logo{
+    background: white;
+    position: absolute;
+    padding: 10px;
+    border-radius: 15px;
+    line-height: 0px;
+    margin-right: 20px;
+    margin-top:35px;
+    border: 5px solid #333;
+}
+
+.logo img{
+    height: 100px;
+}
+
+.painel{
+    padding-left: 0px;
+    list-style: none;
+    text-align: center;
+}
+
+.painel li{
+    width: 300px;
+    display: inline-flex;
+    font-size: 20px;
+    padding: 30px;
+    margin: 10px;
+    background: rgba(255,255,255,0.5);
+    border-radius: 10px;
+    border: 3px solid #ccc;
+}
+
+.painel img{
+    height: 250px;
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+.painel a{
+    
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.center{
+    text-align: center;
+}
+
+label{
+    display:block;
+}
+
+form{
+    background: rgba(0,0,0,0.1);
+    padding:40px;
+    padding-top: 10px;
+}
+
+form h2{
+    font-family: 'Merienda', cursive;
+    font-size: 25px;
+}
+
+input,select,textarea{
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom:20px;
+    background:white;
+    /*border:3px solid #333;*/
+    font-size: 18px;
+}
+
+.btn{
+    padding: 20px;
+    border:none;
+    cursor:pointer;
+    font-style: none;
+    text-decoration: none;
+    background:#333;
+    color:white;
+    font-size: 20px;
+    font-family: 'Merienda', cursive;
+}
+
+#conteudo{
+    margin-bottom: 50px;
+    margin-top: 50px;
+    min-height: 1200px;
+}
+
+#footer{
+    background: #222;
+    color: white;
+    line-height: 200px;
+    border-top: 35px solid #5AAFBA;
+}
+
+.divide{
+    display:flex;
+    margin-bottom: 20px;
+}
+
+.divide label{
+    display:none;
+}
+
+.divide input, select{
+    margin-right:5px;
+    margin-bottom: 0px;
+}
